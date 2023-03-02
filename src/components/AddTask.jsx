@@ -3,7 +3,7 @@ import "./AddTask.css";
 
 const AddTask = () => {
   return (
-    <div>AddTask</div>
+    <div className="add-task">AddTask</div>
   )
 }
 

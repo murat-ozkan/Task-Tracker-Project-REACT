@@ -1,11 +1,12 @@
 import "./Header.css";
+import img from "../assets/cogwhee.svg";
 
 const Header = () => {
   return (
     <>
-      <div className="bg-secondary d-flex justify-content-center p-5 gap-5">
-        <img src="../assets/task.png" alt="task.png" />
-        TASK LIST
+      <div className="header bg-secondary d-flex justify-content-evenly">
+        <img src={img} alt="task.png" className="img-fluid " />
+        <h1>TASK LIST</h1>
       </div>
     </>
   );

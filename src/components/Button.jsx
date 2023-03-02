@@ -5,7 +5,7 @@ import React from 'react'
 const Button = () => {
   return (
     <div>
-        <button type="submit">Show Tasks</button>
+        <button className="button" type="submit">Show Tasks</button>
     </div>
   )
 }

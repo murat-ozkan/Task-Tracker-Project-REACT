@@ -1,0 +1,21 @@
+.img-fluid {
+  width: 5%;
+  position: relative;
+  animation: mymove 3s infinite;
+}
+.header {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+@keyframes mymove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

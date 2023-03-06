@@ -1,11 +1,13 @@
 import "./TaskList.css";
 
-
-
 const TaskList = () => {
   return (
-    <div>TaskList</div>
-  )
-}
+    <div className="task-list">
+      <ul>
+        <li>tasks</li>
+      </ul>
+    </div>
+  );
+};
 
-export default TaskList
+export default TaskList;

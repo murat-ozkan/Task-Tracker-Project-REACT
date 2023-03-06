@@ -1,3 +1,9 @@
-.add-task{
-    border: solid blue 3px
+.add-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+form{
+    width: 400px;
 }

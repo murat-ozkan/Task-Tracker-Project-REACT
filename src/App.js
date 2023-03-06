@@ -1,12 +1,11 @@
 import Main from "./components/Main";
 import Header from "./components/Header";
-// import "../src/assets/car.png";
+import "./App.css"
 
 const App = () => {
   return (
-    <div className="text-center">
+    <div className="container">
       <Header />
-
       <Main />
     </div>
   );

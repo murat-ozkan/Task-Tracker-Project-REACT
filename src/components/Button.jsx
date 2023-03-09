@@ -11,7 +11,7 @@ const Button = () => {
   };
 
   return (
-    <div>
+    <div className="text-center">
       <button className="button" type="submit" onClick={toggle}>
         {showTasks ? "Hide Adding Task" : "Show Adding Task"}
       </button>

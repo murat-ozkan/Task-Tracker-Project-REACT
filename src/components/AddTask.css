@@ -4,6 +4,30 @@
   align-items: center;
   width: 400px;
 }
-form{
-    width: 400px;
+form {
+  width: 400px;
+}
+.button {
+  width: 15rem;
+  height: 2rem;
+  background-color: #103778;
+  margin: 1rem;
+  font-size: large;
+  color: whitesmoke;
+}
+
+.Water-Rust-1 {
+  color: #151f30;
+}
+.Water-Rust-2 {
+  color: #103778;
+}
+.Water-Rust-3 {
+  color: #0593a2;
+}
+.Water-Rust-4 {
+  color: #ff7a48;
+}
+.Water-Rust-5 {
+  color: #e3371e;
 }

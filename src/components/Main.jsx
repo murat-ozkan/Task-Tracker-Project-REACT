@@ -1,6 +1,5 @@
 import "./Main.css";
 import axios from "axios";
-import Button from "./Button";
 import TaskList from "./TaskList";
 import { useEffect, useState } from "react";
 import AddTask from "./AddTask";
@@ -21,9 +20,9 @@ const Main = () => {
   return (
     <>
       <div className="main d-flex justify-content-center align-items-center">
-        <Button getTask={getTask}/>
+        <AddTask AddTask={getTask} />
       </div>
-      <TaskList />
+      <TaskList task={task} getTask={getTask} />
     </>
   );
 };

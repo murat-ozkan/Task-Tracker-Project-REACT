@@ -1,5 +1,5 @@
 .img-fluid {
-  width: 10%;
+  width: 65px;
   position: relative;
   animation: mymove 3s infinite;
 }

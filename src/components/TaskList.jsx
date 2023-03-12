@@ -21,7 +21,7 @@ const TaskList = ({ task, getTask }) => {
           const { id, task, date } = item;
           return (
             <div key={id} className="d-flex justify-content-between mx-5 mb-1">
-              <div className="d-flex justify-content-between listing">
+              <div className="d-flex justify-content-between listing mx-5">
                 <div>
                   <h4>{task}</h4>
                   <p>{new Date(date).toLocaleDateString()}</p>
@@ -35,6 +35,7 @@ const TaskList = ({ task, getTask }) => {
                     marginRight: "20px",
                     fontSize: "1.5rem",
                     color: "#e3371e",
+                    marginRight: "50px",
                   }}
                   onClick={() => deleteTask(id)}
                 />

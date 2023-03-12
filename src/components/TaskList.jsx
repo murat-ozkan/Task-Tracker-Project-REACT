@@ -6,7 +6,7 @@ const TaskList = ({ task, getTask }) => {
   const deleteTask = async (id) => {
     const url = "https://640217daab6b7399d0b39f20.mockapi.io/api/tasklist";
     try {
-      await axios.delete(url, id);
+      await axios.delete(`${url}/${id}`);
     } catch (error) {
       console.log(error);
     }
@@ -20,7 +20,7 @@ const TaskList = ({ task, getTask }) => {
           const { id, task, date } = item;
           return (
             <div>
-              <div className="bg-secondary mt-2 d-flex justify-content-between rounded-2 p-2">
+              <div>
                 <h4>{task}</h4>
                 <p>{new Date(date).toLocaleDateString()}</p>
               </div>

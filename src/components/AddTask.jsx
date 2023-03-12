@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import "./AddTask.css";
 
 const AddTask = ({ getTask }) => {
-  const [newTask, setNewTask] = useState("");
+  const [task, setTask] = useState("");
   const [date, setDate] = useState("");
   const [showTasks, setShowTasks] = useState(false);
 
@@ -16,17 +16,17 @@ const AddTask = ({ getTask }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newTaskPack = { newTask, date };
-    addNewTask(newTaskPack);
-    setNewTask("");
+    const taskPack = { task, date };
+    addTask(taskPack);
+    setTask("");
     setDate("");
-    console.log(newTaskPack);
+    console.log(taskPack);
   };
 
-  const addNewTask = async (newTaskPack) => {
+  const addTask = async (taskPack) => {
     const url = "https://640217daab6b7399d0b39f20.mockapi.io/api/tasklist";
     try {
-      await axios.post(url, newTaskPack);
+      await axios.post(url, taskPack);
     } catch (error) {
       console.log(error);
     }
@@ -45,8 +45,8 @@ const AddTask = ({ getTask }) => {
               <Form.Control
                 type="text"
                 placeholder="Enter a task"
-                value={newTask}
-                onChange={(e) => setNewTask(e.target.value)}
+                value={task}
+                onChange={(e) => setTask(e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3">

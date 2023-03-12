@@ -11,6 +11,7 @@ const Main = () => {
   const getTask = async () => {
     const { data } = await axios(url);
     setTask(data);
+    console.log(data, "data budur");
   };
 
   useEffect(() => {
@@ -20,7 +21,7 @@ const Main = () => {
   return (
     <>
       <div className="main d-flex justify-content-center align-items-center">
-        <AddTask AddTask={getTask} />
+        <AddTask getTask={getTask} />
       </div>
       <TaskList task={task} getTask={getTask} />
     </>

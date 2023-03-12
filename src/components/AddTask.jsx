@@ -41,7 +41,7 @@ const AddTask = ({ getTask }) => {
         </button>
         {showTasks && (
           <Form onSubmit={handleSubmit} className="form text-center">
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Form.Control
                 type="text"
                 placeholder="Enter a task"
@@ -49,16 +49,16 @@ const AddTask = ({ getTask }) => {
                 onChange={(e) => setTask(e.target.value)}
               />
             </Form.Group>
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-2">
               <Form.Control
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
               />
             </Form.Group>
-            <Button className="button" type="submit">
-              Submit
-            </Button>
+            <button type="submit" id="button">
+              Add Task
+            </button>
           </Form>
         )}
       </div>

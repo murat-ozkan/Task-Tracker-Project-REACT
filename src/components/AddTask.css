@@ -13,7 +13,19 @@ form {
   background-color: #103778;
   margin: 1rem;
   font-size: large;
-  color: whitesmoke;
+  color: #ff7a48;
+  border: none;
+  border-radius: 10px;
+}
+#button {
+  background-color: #ff7a48;
+  width: 15rem;
+  height: 2rem;
+  font-size: large;
+  color: #103778;
+  margin: 1rem;
+  border: none;
+  border-radius: 10px;
 }
 
 .Water-Rust-1 {

@@ -1,6 +1,6 @@
 import axios from "axios";
 import "./TaskList.css";
-import { RiDeleteBack2Fill } from "react-icons/ri";
+import { TiDelete } from "react-icons/ti";
 
 const TaskList = ({ task, getTask }) => {
   const deleteTask = async (id) => {
@@ -11,6 +11,7 @@ const TaskList = ({ task, getTask }) => {
       console.log(error);
     }
     getTask();
+    console.log("task");
   };
 
   return (
@@ -19,18 +20,20 @@ const TaskList = ({ task, getTask }) => {
         {task.map((item) => {
           const { id, task, date } = item;
           return (
-            <div>
-              <div>
-                <h4>{task}</h4>
-                <p>{new Date(date).toLocaleDateString()}</p>
+            <div key={id} className="d-flex justify-content-between mx-5 mb-1">
+              <div className="d-flex justify-content-between">
+                <div>
+                  <h4>{task}</h4>
+                  <p>{new Date(date).toLocaleDateString()}</p>
+                </div>
               </div>
               <div>
-                <RiDeleteBack2Fill
+                <TiDelete
                   style={{
                     cursor: "pointer",
                     marginRight: "20px",
-                    // fontSize: "2rem",
-                    // boxShadow: "3px 3px 5px green",
+                    fontSize: "2rem",
+                    color: "#e3371e",
                   }}
                   onClick={() => deleteTask(id)}
                 />

@@ -28,7 +28,7 @@ const TaskList = ({ task, getTask }) => {
                 </div>
               </div>
               <div>
-                <TiDelete
+                <TiDelete className="deleteIcon"
                   style={{
                     cursor: "pointer",
                     marginRight: "20px",

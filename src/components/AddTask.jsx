@@ -47,6 +47,7 @@ const AddTask = ({ getTask }) => {
                 placeholder="Enter a task"
                 value={task}
                 onChange={(e) => setTask(e.target.value)}
+                required
               />
             </Form.Group>
             <Form.Group className="mb-2">
@@ -54,6 +55,7 @@ const AddTask = ({ getTask }) => {
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
+                required
               />
             </Form.Group>
             <button type="submit" id="button">
